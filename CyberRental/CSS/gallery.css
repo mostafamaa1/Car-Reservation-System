@@ -1,0 +1,219 @@
+.text-block{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.8;
+}
+.text-block::after{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.8;
+}
+.text-block::before{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0;
+}
+ 
+.titleg {
+    text-align: center;
+    padding: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+ 
+ /**********/
+ /* Slider */
+/**********/
+
+.slider {
+    background-color: #fff;
+    box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
+                0 3px 1px hsla(0,0%,100%,.75),
+                0 -1px 1px 2px hsla(0,0%,0%,.1);
+    height: 45em;
+    left: 30%;
+    margin: 5em -13em;
+    margin-bottom: -400px;
+    padding: 0;
+    position:relative;
+    top: 50%;
+    width: 80em;
+
+}
+
+/* Frame */
+
+.slider:before {
+    background-color: #22130c;
+    bottom: -2.5em;
+    box-shadow: inset 0 1px 1px 1px hsla(0,0%,100%,.2),
+                inset 0 -2px 1px hsla(0,0%,0%,.4),
+                0 5px 50px hsla(0,0%,0%,.25),
+                0 20px 20px -15px hsla(0,0%,0%,.2),
+                0 30px 20px -15px hsla(0,0%,0%,.15),
+                0 40px 20px -15px hsla(0,0%,0%,.1);
+    content: '';
+    left: -2.5em;
+    position: absolute;
+    right: -2.5em;
+    top: -2.5em;
+    z-index: -1;
+}
+
+/* Mat */
+
+.slider:after {
+    background-color: #fff5e5;
+    bottom: -1.5em;
+    box-shadow: 0 2px 1px hsla(0,0%,100%,.2),
+                0 -1px 1px 1px hsla(0,0%,0%,.4),
+                inset 0 2px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 4px 3px 1px hsla(0,0%,0%,.2),
+                inset 0 6px 3px 1px hsla(0,0%,0%,.1);
+    content: '';
+    left: -1.5em;
+    position: absolute;
+    right: -1.5em;
+    top: -1.5em;
+    z-index: -1;
+}
+
+/* Slides */
+
+.slider li {
+    box-shadow: 0 -1px 0 2px hsla(0,0%,0%,.03);
+    list-style:none;
+    position: absolute;
+}
+.slider input {
+    display: none;
+}
+
+/* Navigation */
+
+.slider label {
+    background-color: #111;
+    background-image: linear-gradient(transparent, hsla(0,0%,0%,.25));
+    border: .2em solid transparent;
+    bottom: .5em;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: 2.5em;
+    left: 30em;
+    opacity: 0;
+    position: absolute;
+    transition: .25s;
+    width: 2.5em;
+    visibility: hidden;
+    z-index: 20;
+}
+.slider label:after {
+    border-radius: 100%;
+    bottom: -.2em;
+    box-shadow: inset 0 0 0 .2em #111,
+                inset 0 2px 2px #000,
+                0 1px 1px hsla(0,0%,100%,.25);
+    content: '';
+    left: -.2em;
+    position: absolute;
+    right: -.2em;
+    top: -.2em;
+}
+.slider:hover label {
+    opacity: 1;
+    visibility: visible;
+}
+.slider input:checked + label {
+    background-color: #fff;
+}
+.slider:hover li:nth-child(1) label {
+    left: .5em;
+}
+.slider:hover li:nth-child(2) label {
+    left: 3.5em;
+}
+.slider:hover li:nth-child(3) label {
+    left: 6.5em;
+}
+.slider:hover li:nth-child(4) label {
+    left: 9.5em;
+}
+.slider:hover li:nth-child(5) label {
+    left: 12.5em;
+}
+
+/* Images */
+
+.slider img {
+    height: 45em;
+    opacity: 0;
+    transition: .25s;
+    width: 80em;
+    vertical-align: top;
+    visibility: hidden;
+}
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+@media only screen and (max-width: 1366px) {
+    .titleg {
+        text-align: center;
+        padding: 1px;
+        margin-right: 150px;
+        font-family: 'Poppins', sans-serif;
+        color: black;
+    }
+    .explore{
+        float: left;
+        color: black;
+        margin-left:54rem;
+        margin-top: 15rem ;
+    }
+    .containergallery{
+        margin-top:500px;
+        margin-bottom:-20rem;
+        margin-left:150px;
+    }
+    .slider {
+        background-color: #fff;
+        box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
+                    0 3px 1px hsla(0,0%,100%,.75),
+                    0 -1px 1px 2px hsla(0,0%,0%,.1);
+        height: 30em;
+        left: 30%;
+        margin: 10em -19em;
+        margin-bottom: 2px;
+        padding: 0;
+        position:relative;
+        top: 90px;
+        width: 60em;
+    
+    }
+    .slider img {
+        height: 30em;
+        opacity: 0;
+        transition: .25s;
+        width: 60em;
+        vertical-align: top;
+        visibility: hidden;
+    }
+
+}

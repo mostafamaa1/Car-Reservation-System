@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.card-container
+ {
+     width: 320px;
+     height: 450px;
+     background: rgb(110, 55, 55);
+     border-radius: 6px;
+     transform: translate(130%, 20%);
+     box-shadow: 0px 1px 10px 1px #000;
+     overflow: hidden;
+     display: inline-block;
+ }
+ .upper-container
+ {
+     height: 70px;
+     background: #353436;
+ }
+ .image-container
+ {
+     background: rgb(119, 55, 55);
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     padding: 1px;
+     transform: translate(110px,5px);
+ }
+ .image-container img
+ {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+ }
+ .lower-container
+ {
+     height: 400px;
+     background: rgb(54, 35, 35);
+     padding: 20px;
+     padding-top: 20px;
+     text-align: center;
+ }
+ 
+ .lower-container
+ {
+     box-sizing: border-box;
+     line-height: 1.3;
+     font-weight: lighter;
+ }
+ 
+ .lower-container,.work
+ {
+     color: #9e5919;
+     opacity: 10;
+     font-weight: bold;
+ }
+ 
+ .lower-container p
+ {
+     font-size: 16px;
+     color: rgb(255, 255, 255);
+     margin-bottom: 35px;
+ }
+ .lower-container .btn
+ {
+     padding: 12px 50px;
+     background: #864113;
+     border: none;
+     color: rgb(0, 0, 0);
+     border-radius: 15px;
+     font-size: 19px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: all 0.3s ease-in;
+ }
+ .lower-container .btn:hover
+ {
+    background: transparent;
+     color: rgb(131, 6, 6);
+     border: 2px solid #704608;
+ }
+ @media screen and (max-width: 1366px) {
+    .card-container
+    {
+        width: 300px;
+        height: 450px;
+        background: rgb(110, 55, 55);
+        border-radius: 6px;
+        transform: translate(50%, 20%);
+        box-shadow: 0px 1px 10px 1px #000;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+  }
+
+  /* NEW CATEGORIES */
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+
+::selection{
+  color: rgb(46, 45, 45);
+  background: #1cc7d0;
+}
+
+.wrappercard{
+  height: 350px;
+  width: 450px;
+  position: center;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  float: left;
+  padding: 1%;
+  margin: 4.5%;
+}
+.wrappercard .card{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  background: rgb(202, 198, 198);
+  border-radius: 10px;
+  transform: translateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.wrappercard:hover > .front-face{
+  transform: rotateY(-180deg);
+}
+.wrappercard .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.wrappercard .back-face{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.wrappercard:hover > .back-face{
+  transform: rotateY(0deg);
+}
+.wrappercard .back-face img{
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #979797, #414141);
+}
+.wrappercard .back-face .info{
+  text-align: center;
+}
+.back-face .info .title{
+  font-size: 30px;
+  font-weight: 500;
+  padding-BOTTOM: 90%;
+}
+.back-face ul{
+  display: flex;
+}
+.back-face ul a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: rgb(44, 43, 43);
+  text-align: center;
+  margin: 0 5px;
+  line-height: 38px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #612bf7, #080a8b);
+  transition: all 0.5s ease;
+}
+.back-face ul a:hover{
+  color: #2e0d86;
+  border-color: #2e0d86;
+  background: linear-gradient(375deg, transparent, transparent);
+}
+
+@media only screen and (max-width: 1366px) {
+  .wrappercard{
+    height: 250px;
+    width: 350px;
+    position: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    float: left;
+    padding: 1%;
+    margin: 2%;
+  }
+
+}

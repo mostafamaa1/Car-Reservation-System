@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.futured {
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    text-align: center;
+    padding-top: 30%;
+    font-size: 40px;
+    font-family: Cursive;
+}
+
+.f{
+    border-color: black;
+    padding: 1%;
+    margin: 7px;
+    margin-left: 20px;
+    float: left;
+    border-style:groove;
+}
+
+.new{
+    size: 100px;
+    text-align: center;
+}
+
+.card {
+    width: 450px;
+    border-radius: 20px;
+
+}
+.card{
+  position: center;
+  
+}
+
+.card-img-top {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px
+}
+
+.pricecar{
+    font-size: 30px;
+}
+span.text-muted {
+    font-size: 15px
+}
+
+small.text-muted {
+    font-size: 17px
+}
+
+h5.mb-0 {
+    font-size: 2rem
+}
+.mb-0{
+  color: #000;
+}
+
+small.ghj {
+    font-size: 14px
+}
+.ghj{
+  color: #000;
+}
+
+.mid {
+    background: #ECEDF1
+}
+
+h6.ml-1 {
+    font-size: 17px
+}
+.ml-1{
+  color: #000;
+}
+small.key {
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer
+}
+
+.btn-danger {
+    color: #FFCBD2
+}
+
+.btn-danger:focus {
+    box-shadow: none
+}
+
+small.justify-content-center {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline
+}
+
+@media screen and (max-width:600px) {
+  .store-products {
+      margin-bottom: 50px
+  }
+  
+}

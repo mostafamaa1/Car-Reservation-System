@@ -1,0 +1,16 @@
+.breadcrumb{
+    padding:8px 15px;
+    list-style:none;
+    background-color: #B6D0E2;
+    border-radius:4px;
+    height: 40px;
+    size-adjust: 14px;
+}
+.breadcrumb>li{
+    display:inline-block
+}
+.breadcrumb>li+li:before{
+    padding:0 5px;
+    color:rgb(0, 0, 0);
+    content:"/\00a0"
+}

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+
+.content1{
+  position: relative;
+  margin: 200px auto;
+  text-align: center;
+  padding: 0 0;
+}
+
+.content1 .textf{
+  font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.textf{
+    color: #000000;
+}
+
+.content1 .p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer{
+  position:relative;
+  bottom: 0px;
+  margin-top: 135px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.main-contentf{
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+.main-contentf .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .contentf{
+  margin: 20px 0 0 0;
+  position: relative;
+  resize: none;
+}
+.box .contentf:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  
+}
+.box .contentf:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #f12020;
+  top: -10px;
+}
+.left .contentf p{
+  text-align: justify;
+}
+.left .contentf .socialf{
+  margin: 20px 0 0 0;
+}
+.left .contentf .socialf a{
+  padding: 0 10px;
+}
+.left .contentf .socialf a span{
+  height: 40px;
+  width: 40px;
+  background: #000000;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .contentf .socialf a span:hover{
+  background: #f12020;
+}
+.center .contentf .fas{
+  font-size: 14px;
+  background: #888787;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .contentf .fas:hover{
+  background: #f12020;
+}
+.center .contentf .textf{
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .contentf .phone{
+  margin: 15px 0;
+}
+.right form .textf{
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #000000;
+  resize: none;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 14px;
+  color: #000;
+  background: #ffffff;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btnf{
+  margin-top: 10px;
+}
+.right form .btnf button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btnf button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 14px;
+  background: #151515;
+}
+.bottom center span{
+  color: #d9d9d9;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+.place .phone .email .fab{
+  color: #d9d9d9;
+}
+
+#content-wrap {
+  padding-bottom: 91px;    /* Footer height */
+}
