@@ -19,6 +19,7 @@ Change SITEURL to your preferred siteurl e.g localhost/, or localhost:8080/
 username: admin
 password: admin
 -
+Note: Extract admin.rar and admin folder inside CyberRental folder
 -
 5- Main Page Login information 
 username: mostafaahmedmaa1@gmail.com 
