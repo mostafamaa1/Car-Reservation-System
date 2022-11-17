@@ -19,10 +19,6 @@ password: admin
 -
 #### Note: Extract admin.rar and add admin folder inside CyberRental folder
 -
-#### 5- Main Page Login information 
-username: mostafaahmedmaa1@gmail.com 
-password: 123456789
--
 -
 #### Note: Sign up wil not work properly due to PHP send mail function, to make it work visit this link https://www.codingnepalweb.com/send-mail-using-xampp-server-with-php/
 -
